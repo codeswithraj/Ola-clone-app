@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Ola</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="support"><a href="https://www.olacabs.com/info">Support</a></string>
+    <string name="privacy"><a href="https://www.olacabs.com/info/faqs#privacyPolicy">Privacy Policy</a></string>
+    <string name="terms">By continuing, you agree that you have read and accept our <a href="https://www.olacabs.com/info/faqs#termsAndConditions">T C</a>s</string>
+</resources>

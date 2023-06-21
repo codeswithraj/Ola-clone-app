@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1049356871819",
+    "project_id": "ola-cab-da576",
+    "storage_bucket": "ola-cab-da576.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1049356871819:android:53597fe3ce8cfbfa374c8e",
+        "android_client_info": {
+          "package_name": "com.example.ola"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1049356871819-op5h4dct7eohn1kt6avdaddjf3h0ga24.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDMWyljKNhRiPPmy5vVPedSlCJCicgO_cQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1049356871819-op5h4dct7eohn1kt6avdaddjf3h0ga24.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

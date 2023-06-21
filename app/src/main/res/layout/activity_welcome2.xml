@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Welcome2Activity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <RelativeLayout
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_centerInParent="true"
+            android:id="@+id/topImage"
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ola5" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/topImage">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Location and Phone permission"
+                android:textSize="@dimen/_20ssp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:id="@+id/welcome"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="required"
+                android:textSize="@dimen/_20ssp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:id="@+id/welcome1"
+                android:layout_below="@id/welcome"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Turn on Location to quickly see available rides near"
+                android:textAlignment="center"
+                android:layout_below="@id/welcome1"
+                android:id="@+id/desc1"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="you. Phone permission will let us verify your Ola"
+                android:textAlignment="center"
+                android:layout_below="@id/desc1"
+                android:id="@+id/desc2"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="account to keep it secure."
+                android:textAlignment="center"
+                android:layout_below="@id/desc2"
+                android:id="@+id/desc3"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentBottom="true">
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ALLOW"
+                android:textColor="#d4df32"
+                android:backgroundTint="@color/black"
+                android:id="@+id/locationAllowBtn"
+                android:padding="5dp"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

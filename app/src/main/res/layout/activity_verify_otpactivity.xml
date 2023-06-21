@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".verifyOTPActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible">
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:id="@+id/navbar"
+            >
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                app:navigationIcon="@drawable/baseline_arrow_back_24"
+                app:menu="@menu/support"
+                />
+        </com.google.android.material.appbar.AppBarLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/navbar"
+            android:layout_marginLeft="35dp"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/_20ssp"
+            android:id="@+id/heading">
+            <TextView
+                android:layout_width="match_parent"
+                android:textStyle="bold"
+                android:letterSpacing="0.02"
+                android:layout_height="wrap_content"
+                android:text="Please wait."
+                android:textColor="@color/black"
+                android:textSize="@dimen/_20ssp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="We will auto verify the OTP"
+                android:textStyle="bold"
+                android:letterSpacing="0.02"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_20ssp"/>
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/heading"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="@dimen/_30ssp"
+            android:layout_marginRight="@dimen/_18ssp"
+            android:orientation="horizontal">
+            <EditText
+                android:hint="Enter your OTP"
+                android:id="@+id/verifyId"
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/nextBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_alignParentBottom="true">
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Verify"
+                android:id="@+id/verifyBtn"
+                android:backgroundTint="@color/black"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

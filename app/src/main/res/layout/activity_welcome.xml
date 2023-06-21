@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WelcomeActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_centerInParent="true"
+            android:id="@+id/topImage"
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ola4" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/topImage">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Welcome to Ola"
+                android:textSize="@dimen/_20ssp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:id="@+id/welcome"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Have a hassle-free booking experience by giving us"
+                android:textAlignment="center"
+                android:id="@+id/text1"
+                android:layout_below="@id/welcome"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="the following permissions"
+                android:textAlignment="center"
+                android:layout_below="@id/text1"
+                android:id="@+id/text2"
+                />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:id="@+id/idLocation"
+                    android:layout_below="@id/text2">
+                    <ImageView
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:background="@drawable/circle"
+                        android:layout_marginRight="10dp"
+                        android:layout_toLeftOf="@+id/locationhead"
+                        />
+                    <TextView
+                        android:id="@+id/locationhead"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Location(for finding available rides)"
+                        android:textColor="@color/black"
+                        android:textAlignment="center"/>
+                </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginLeft="23dp"
+                android:layout_below="@id/idLocation">
+                <ImageView
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:background="@drawable/circle"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/phoneHead"
+                    />
+                <TextView
+                    android:id="@+id/phoneHead"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Phone(for account security verification)"
+                    android:textColor="@color/black"
+                    android:textAlignment="center"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_alignParentBottom="true">
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ALLOW"
+                android:padding="5dp"
+                android:textColor="#d4df32"
+                android:backgroundTint="@color/black"
+                android:id="@+id/location"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

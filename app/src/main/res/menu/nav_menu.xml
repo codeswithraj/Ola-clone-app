@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+   tools:showIn="navigation_view"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Electric"
+        android:id="@+id/electric"
+        android:icon="@drawable/baseline_electric_bolt_24"
+        />
+    <item android:title="Your Rides"
+        android:id="@+id/rides"
+        android:icon="@drawable/outline_watch_later_24"
+        />
+    <item android:title="Ola Money"
+        android:id="@+id/money"
+        android:icon="@drawable/baseline_all_inclusive_24"
+        />
+    <item android:title="Payments"
+        android:id="@+id/payments"
+        android:icon="@drawable/outline_account_balance_wallet_24"
+        />
+    <item android:title="Insurance"
+        android:id="@+id/insurance"
+        android:icon="@drawable/outline_safety_check_24"
+        />
+    <item android:title="Support"
+        android:id="@+id/support"
+        android:icon="@drawable/outline_support_24"
+        />
+    <item android:title="About"
+        android:id="@+id/about"
+        android:icon="@drawable/outline_group_work_24"
+        />
+
+
+</menu>
